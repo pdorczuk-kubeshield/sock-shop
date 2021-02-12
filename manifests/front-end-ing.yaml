@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: sock-shop
+  namespace: sock-shop
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: letsencrypt-staging
+spec:
+  tls:
+  - secretName: sock-shop-tls
+    hosts:
+    - shop.kubeshield.com
+  rules:
+  - host: shop.kubeshield.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: front-end
+          servicePort: 80
