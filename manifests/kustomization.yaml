@@ -16,7 +16,6 @@ resources:
 - front-end-ing.yaml
 - front-end-svc.yaml
 - loadtest-dep.yaml
-- namespace.yaml
 - orders-db-dep.yaml
 - orders-db-svc.yaml
 - orders-dep.yaml
