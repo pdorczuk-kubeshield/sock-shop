@@ -1,6 +1,6 @@
 commonLabels:
   team: operations
-  app: sock-shop
+  application: sock-shop
   component: primary-application
 
 resources:
