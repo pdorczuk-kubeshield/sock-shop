@@ -1,5 +1,7 @@
 commonLabels:
   team: operations
+  app: sock-shop
+  component: primary-application
 
 resources:
 - carts-db-dep.yaml
@@ -14,6 +16,7 @@ resources:
 - front-end-ing.yaml
 - front-end-svc.yaml
 - loadtest-dep.yaml
+- namespace.yaml
 - orders-db-dep.yaml
 - orders-db-svc.yaml
 - orders-dep.yaml
